@@ -1,37 +1,28 @@
-Voice Campus Navigator
+# Voice Campus Navigation
 
-A simple Python app that listens to your voice to find routes between campus locations.
+A simple voice-controlled campus navigation system that listens to your query, understands start and destination points using NLP, and finds paths between locations using DFS.
 
-What it does
+## Features
 
-Takes voice input to understand start and destination locations.
+- Voice input for queries
+- Extracts locations using NLP
+- Finds all paths between two locations
+- Speaks out the directions
 
-Finds all possible paths between those points on a small campus map.
+## Requirements
 
-Speaks out the found paths.
+- Python 3
+- speech_recognition
+- pyttsx3
+- spacy
+- en_core_web_sm (SpaCy language model)
 
-How to use
+## Setup
 
-Run the program:
-
-python main.py
-
-
-When prompted, say something like:
-
-"Go from Main gate to Admin Block."
-
-The app will tell you the possible routes.
-
-Setup
-
-Install dependencies:
-
-pip install SpeechRecognition pyttsx3 spacy
+1. Install required packages:
+pip install speechrecognition pyttsx3 spacy
 python -m spacy download en_core_web_sm
 
-Note that
 
-The campus map is simple and fixed in the code.
-
-Works best with clear location names.
+2. Run the script:
+python your_script_name.py
